@@ -1,0 +1,26 @@
+body {
+   margin: 0;
+   background-color: #262626;
+}
+
+.timeLine{
+   display: flex;
+}
+
+
+.timeLine-element{
+   background-color: #717171;
+   height: 3px;
+   width: 100%;
+   border-radius: 2px;
+}
+
+.timeLine-element + .timeLine-element {
+   margin-left: 20px;
+}
+.timeLine-element-inner{
+   width: 0;
+   height: inherit;
+   background-color: white;
+   border-radius: inherit;
+}
