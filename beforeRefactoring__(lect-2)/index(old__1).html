@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styles(old__1).css">
+   <title>Основа плеера</title>
+</head>
+<body>
+   <div class="player">
+      <div class="timeLine">
+<!-- timeline-chunk ===  timeline-element -->
+         <div class="timeLine-element timeLine-element-active"><div class="timeLine-element-inner" style="width: 100%;"></div></div>
+         <div class="timeLine-element"><div class="timeLine-element-inner" style="width: 50%;"></div></div>
+         <div class="timeLine-element"><div class="timeLine-element-inner"></div></div>
+         <div class="timeLine-element"><div class="timeLine-element-inner"></div></div>
+         <div class="timeLine-element"><div class="timeLine-element-inner"></div></div>
+         <div class="timeLine-element"><div class="timeLine-element-inner"></div></div>
+      </div>
+      <div class="player-content">
+         <div class="playerSlide-switcher playerSlide-switcher-prev"></div>
+         <div class="playerSlide-switcher playerSlide-switcher-next"></div>
+
+<!-- player-chunk ===> playerSlide -->
+         <div class="playerSlide playerSlide-active"><img src="images/player-slide--1.jpg" alt="slide-1">
+         <!-- player-item ===> playerSlide-img -->
+         </div>
+         <div class="playerSlide"><img src="images/player-slide--2.jpg" alt="slide-2">
+         </div>
+         <div class="playerSlide"><img src="images/player-slide--3.jpg" alt="slide-3">
+         </div>
+         <div class="playerSlide"><img src="images/player-slide--4.jpg" alt="slide-4">
+         </div>
+      </div>
+</div>
+
+<script src="main(old__1).js"></script>
+</body>
+</html>
+
+<!-- timeline-chunk ===  timeline-element -->
