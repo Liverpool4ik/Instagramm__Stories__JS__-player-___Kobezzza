@@ -1,0 +1,72 @@
+body {
+	margin: 0;
+	background-color: #262626;
+}
+
+.timeLine {
+	display: flex;
+	margin: 5px 0px;
+}
+
+.timeLine-element {
+	background-color: #717171;
+	height: 3px;
+	width: 100%;
+	border-radius: 2px;
+}
+
+/* to choose ONE element with class = "timeLine-element" BEFORE which HAS ---> an element with class = "timeLine-element" */
+.timeLine-element + .timeLine-element {
+	margin-left: 20px;
+}
+.timeLine-element-inner {
+	width: 0;
+	height: inherit;
+	background-color: white;
+	border-radius: inherit;
+}
+
+/* to choose ----> AAALLLL <<--- elements with class = "timeLine-element-inner"  which has a PARENT ".timeLine-element" ===> which ARE GOING aftr elemnts with class = ".timeLine-elemnt-actived"*/
+.timeLine-element-active > .timeLine-element-inner,
+.timeLine-element-active ~ .timeLine-element > .timeLine-element-inner {
+	width: 0;
+}
+
+.player {
+	width: 370px;
+	margin: 0 auto;
+}
+
+.player-content-wrapper {
+	position: relative;
+}
+
+.player-content img {
+	width: 100%;
+}
+
+.playerSlide {
+	display: none;
+}
+
+.playerSlide-active {
+	display: block;
+}
+
+.playerSlide-switcher {
+	position: absolute;
+	z-index: 2;
+	height: 100%;
+	width: 30%;
+	background-color: transparent;
+}
+
+.playerSlide-switcher-prev {
+	top: 0;
+	left: 0;
+}
+
+.playerSlide-switcher-next {
+	top: 0;
+	right: 0;
+}
